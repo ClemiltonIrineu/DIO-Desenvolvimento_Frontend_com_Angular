@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+
+  <!-- Normalize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+
+
+  <!-- Nosso CSS -->
+  <link rel="stylesheet" href="/assets/css/global.css">
+  <link rel="stylesheet" href="/assets/css/pokedex.css">
+  <link rel="stylesheet" href="/assets/css/pokedex_Poke.css">
+
+</head>
+
+<body>
+  <section class="content">
+    <div class="tituloPokedex">
+      <img width="32px" src="./assets/images/pokeball.png" alt="">
+      <h1>Pokedex CIAS</h1>
+      <img width="32px" src="./assets/images/pokeball.png" alt="">
+    </div>
+
+    <ol id="pokemonList" class="pokemons">
+      <!-- ..... Pokemons here ..... -->
+    </ol>
+
+    <div class="pagination">
+      <button id="loadMoreButton" type="button">
+        Load More
+      </button>
+    </div>
+
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="titulo">
+            <img width="32px" src="./assets/images/pokeball.png" alt="">
+            <div class="tituloPok">
+              <span id="numeroPok"> #00</span><br>
+              <span id="nomePok"> </span>
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img id="imgPok" src="" alt="Imagem do Pokemon">
+
+
+            <div class="accordion" id="painelPokemon">
+              <div class="expecificacoes">
+                <p>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample">
+                    Pokemon </button>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample">
+                    Habilidade </button>
+                  <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample">
+                    Estastisticas </button>
+                </p>
+              </div>
+              <div class="row ">
+                <div class="col">
+                  <div class="collapse" id="multiCollapseExample1">
+                    <div class="card card-body imgcollapsebody">
+                      <span id="tipoPok"><br></span>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="collapse" id="multiCollapseExample2" data-bs-parent="#painelPokemon">
+                      <div class="card card-body imgcollapsebody">
+                        <span id="habilidadePok"></span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="collapse" id="multiCollapseExample3" data-bs-parent="#painelPokemon">
+                        <div class="card card-body imgcollapsebody">
+                          <span id="statistic"><br></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+
+
+  <!-- Nosso JS -->
+  <script src="/assets/js/pokemon-model.js"></script>
+  <script src="/assets/js/poke-api.js"></script>
+  <script src="/assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

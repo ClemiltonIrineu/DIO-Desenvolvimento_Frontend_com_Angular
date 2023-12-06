@@ -1,0 +1,82 @@
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-image: url("plano_fundo.jpg");
+    background-origin: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: 5%;
+    outline: 0;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--bs-modal-header-padding);
+    border-bottom: var(--bs-modal-header-border-width) solid var(--bs-modal-header-border-color);
+    border-top-left-radius: var(--bs-modal-inner-border-radius);
+    border-top-right-radius: var(--bs-modal-inner-border-radius);
+
+}
+
+.tituloPok {
+    margin: 2%;
+    text-transform: capitalize;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.modal-body img {
+    margin: auto;
+    display: block;
+    width: calc(40%);
+}
+
+.expecificacoes {
+    background-color: brown;
+    border-radius: 6px;
+    padding: 1%;
+}
+
+.expecificacoes p {
+    margin: 3%;
+    text-align: center;
+}
+
+
+.imgcollapsebody {
+    background-image: url("pokemon_Logo2.png");
+    background-origin: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.card-body {
+    text-transform: capitalize;
+
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
