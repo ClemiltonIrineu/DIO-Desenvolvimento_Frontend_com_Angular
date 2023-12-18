@@ -1,0 +1,38 @@
+<div type="button" [routerLink]="['content', Id]" class="card">
+  <img
+  class="card-img-top"
+  src="{{ photoCover }}"
+  alt=""
+  height="250px"
+  srcset=""
+>
+  <div class="card-body">
+
+    <h5 class="card-title"> {{ cardTitle }} </h5>
+    <p class="card-text">
+      {{ cardDescription }}
+    </p>
+    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+
+
+
+<!-- 
+NOT DINAMIC
+
+<div type="button" class="card">
+  <img src="./assets/images/cardDefault.png" class="card-img-top" height="250px" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title Destaque</h5>
+    <p class="card-text">
+      Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado
+      desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um
+      livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração
+      eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou
+      decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de
+      editoração eletrônica como Aldus PageMaker.
+    </p>
+    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+  </div>
+</div> -->
