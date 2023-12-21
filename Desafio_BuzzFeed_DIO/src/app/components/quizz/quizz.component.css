@@ -1,0 +1,70 @@
+.title {
+    display: flex;
+    width: 100%;
+    padding-top: 2%;
+    justify-content: center;
+}
+.title h2 {
+    color: white;
+}
+
+.containerQuizz{
+    width: 65%;
+    margin: auto;
+    border-radius: 12px;
+    margin-top: 2%;
+}
+
+
+
+.question{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(148, 108, 241);
+    border-radius: 12px;
+}
+
+.resposta{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 1, 36);
+    border-radius: 12px;
+}
+
+
+.options{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4%;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.options button{
+    width: 435px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: transparent;
+    border: solid 1px;
+    border-color: greenyellow;
+    margin-left: 1%;
+}
+
+.options button:hover{
+background-color: greenyellow;
+}
+
+.options button:active{
+position: relative;
+top: 1px;
+}
